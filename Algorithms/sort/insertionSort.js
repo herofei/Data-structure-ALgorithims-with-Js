@@ -41,8 +41,8 @@ function insertionSort (array) {
         // 循环待排序数组前面的有序列
         for (let inner = 0; inner < outer; inner++) {
             if (array[inner] > temp) {
-                this.splice(inner, 0, temp);
-                this.splice(outer, 1);
+                array.splice(inner, 0, temp);
+                array.splice(outer, 1);
                 break;
             }
         }
